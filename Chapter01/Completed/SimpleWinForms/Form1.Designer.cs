@@ -1,4 +1,6 @@
-﻿namespace SimpleWinForms
+﻿using AcrylicUI.Controls;
+
+namespace SimpleWinForms
 {
     partial class Form1
     {
@@ -29,8 +31,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            lblName = new Label();
-            txtName = new TextBox();
+            lblName = new AcrylicLabel();
+            txtName = new AcrylicTextBox();
             mainViewModelBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)mainViewModelBindingSource).BeginInit();
             SuspendLayout();
@@ -63,8 +65,8 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(280, 141);
             Controls.Add(txtName);
             Controls.Add(lblName);
@@ -78,8 +80,8 @@
 
         #endregion
 
-        private Label lblName;
-        private TextBox txtName;
+        private AcrylicLabel lblName;
+        private AcrylicTextBox txtName;
         private BindingSource mainViewModelBindingSource;
     }
 }
