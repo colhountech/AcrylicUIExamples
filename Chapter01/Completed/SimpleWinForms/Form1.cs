@@ -12,6 +12,13 @@ namespace SimpleWinForms
             InitializeComponent();
 
             MainViewModel = new MainViewModel { Name = "Test" };
+            MainViewModel.PropertyChanged += (sender, args) =>
+            {
+                if (args.PropertyName == nameof(MainViewModel.Name))
+                {
+                    lblOutput.Text = MainViewModel.Name;
+                }
+            };
             mainViewModelBindingSource.DataSource = MainViewModel;
             // AcrylicUI
             AutoScaleDimensions = new SizeF(96F, 96F);

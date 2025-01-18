@@ -39,6 +39,7 @@ Now, that we are finished with the setup, we can work on the asethetics:
  1. Make IsAcrylic true
  1. Label -> AcrylicLabel
  1. TextBox -> AcrylicTextbox 
+ 1. Set PropertyChanged for MainViewModel
 
 That's it. Now build and run your first AcrylicUI App
 

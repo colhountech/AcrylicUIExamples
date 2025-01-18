@@ -33,6 +33,7 @@ namespace SimpleWinForms
             components = new System.ComponentModel.Container();
             lblName = new AcrylicLabel();
             txtName = new AcrylicTextBox();
+            lblOutput = new AcrylicLabel();
             mainViewModelBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)mainViewModelBindingSource).BeginInit();
             SuspendLayout();
@@ -58,6 +59,17 @@ namespace SimpleWinForms
             txtName.PlaceholderText = "Enter Your Name";
             txtName.Size = new Size(186, 25);
             txtName.TabIndex = 1;
+            // 
+            // lblOutput
+            // 
+            lblOutput.AutoSize = true;
+            lblOutput.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblOutput.Location = new Point(12, 32);
+            lblOutput.Margin = new Padding(1, 0, 1, 0);
+            lblOutput.Name = "lblOutput";
+            lblOutput.Size = new Size(52, 20);
+            lblOutput.TabIndex = 0;
+            lblOutput.Text = "Watch This Text";
             //
             // mainViewModelBindingSource
             //
@@ -70,6 +82,7 @@ namespace SimpleWinForms
             ClientSize = new Size(280, 141);
             Controls.Add(txtName);
             Controls.Add(lblName);
+            Controls.Add(lblOutput);
             Margin = new Padding(1);
             Name = "Form1";
             Text = "Form1";
@@ -82,6 +95,7 @@ namespace SimpleWinForms
 
         private AcrylicLabel lblName;
         private AcrylicTextBox txtName;
+        private AcrylicLabel lblOutput;
         private BindingSource mainViewModelBindingSource;
     }
 }
